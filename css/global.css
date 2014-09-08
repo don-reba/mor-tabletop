@@ -1,0 +1,304 @@
+/*************
+ * reset.css *
+ *************/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,section,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
+:focus { outline:0; }
+a:active { outline:none; }
+body { line-height:1; color:black; background:white; }
+ol,ul { list-style:none; }
+table { border-collapse:separate; border-spacing:0; }
+caption,th,td { text-align:left; font-weight:normal; }
+blockquote:before,blockquote:after,q:before,q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+
+/*****************
+ * global styles *
+ *****************/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family : "Didact Gothic";
+	font-size   : 16px;
+	font-style  : normal;
+	font-weight : 400;
+	line-height : 26px;
+	text-align  : center;
+}
+
+hr {
+	background-color : white;
+	height           : 5px;
+	margin           : 20px auto 25px auto;
+	width            : 100px;
+}
+
+/**************
+ * row styles *
+ **************/
+
+#top {
+	background-color    : black;
+	background-image    : url(http://me-too.ru/wp-content/uploads/2014/09/Render04_cam1.jpg);
+	background-position : 50% 50%;
+	background-repeat   : no-repeat;
+	background-size     : auto 100%;
+	min-height          : 100%;
+	overflow            : hidden;
+	width               : 100%;
+	position            : relative;
+}
+
+#kickstarter, #cards, #games {
+	color            : rgb(112, 10, 3);
+	background-color : rgb(240, 235, 226);
+	padding          : 20px 0;
+}
+
+#game, #features, #faq {
+	color                 : white;
+	background-color      : rgb(243, 245, 247);
+	background-image      : url(http://me-too.ru/wp-content/uploads/2014/09/for_fon_site.jpg);
+	background-repeat     : repeat;
+	background-position   : 50% 50%;
+	background-attachment : scroll;
+	background-size       : auto auto;
+	padding               : 20px 0;
+}
+
+#bottom {
+	background-color : rgb(37, 37, 37);
+	color            : rgb(153, 153, 153);
+	font-size        : 11px;
+	line-height      : 40px;
+}
+
+/***************
+ * top section *
+ ***************/
+
+#top .lang {
+	color           : white;
+	text-decoration : none;
+
+	position : absolute;
+	right    : 2%;
+	top      : 2%;
+}
+
+#top .lang:hover {
+	color : rgb(247, 86, 85);
+}
+
+#top #pathologic-logo {
+	position : absolute;
+	right    : 2%;
+	top      : 5%;
+
+	height : 30%;
+}
+
+#top #studio-logo {
+	position : absolute;
+	left     : 2%;
+	top      : 2%;
+
+	height : 16%;
+}
+
+#top h1 {
+	color       : white;
+	font-family : Underdog;
+	font-size   : 4.2vh;
+	line-height : 4.4vh;
+	text-align  : right;
+	text-shadow : 0 0 4px black;
+
+	position    : absolute;
+	right       : 6%;
+	top         : 68%;
+}
+
+#top h2 {
+	color       : white;
+	font-family : Underdog;
+	font-size   : 20px;
+	line-height : 26px;
+	text-align  : right;
+	text-shadow : 0 0 4px black;
+
+	position    : absolute;
+	right       : 6%;
+	top         : 78%;
+}
+
+/***********************
+ * kickstarter section *
+ ***********************/
+
+#kickstarter {
+	padding : 40px 0;
+}
+
+#kickstarter p {
+	font-family : Underdog;
+	font-size   : 22px;
+	line-height : 36px;
+	margin      : 0 auto;
+	width       : 727px;
+}
+
+#kickstarter h1 {
+	font-family : Underdog;
+	font-size   : 76px;
+	line-height : 74px;
+	margin      : 20px 0 20px 0;
+}
+
+#kickstarter #button {
+	background-color : rgb(112, 10, 3);
+	border           : none;
+	color            : white;
+	display          : inline-block;
+	font-size        : 14px;
+	line-height      : 20px;
+	padding          : 18px 50px;
+	text-decoration  : none;
+}
+
+#kickstarter #chevron {
+}
+
+/****************
+ * game section *
+ ****************/
+
+#game h1 {
+	font-family : Underdog;
+	font-size   : 40px;
+	line-height : 44px;
+}
+
+#game p {
+	font-family : Underdog;
+	font-size   : 22px;
+	line-height : 36px;
+	margin      : 60px auto 0 auto;
+	width       : 534px;
+}
+
+/*****************
+ * cards section *
+ *****************/
+
+#cards img {
+	height : 512px;
+}
+
+
+#cards h1 {
+	font-family : Underdog;
+	font-size   : 22px;
+	line-height : 36px;
+	margin      : 30px 0;
+}
+
+#cards td {
+	text-align : center;
+}
+
+#cards p {
+	margin : 20px 0;
+	width  : 346px;
+}
+
+#cards table {
+	border-collapse : separate;
+	border-spacing  : 30px 0;
+	margin          : 0 auto;
+}
+
+/********************
+ * features section *
+ ********************/
+
+#features ul {
+	list-style-type     : square;
+	list-style-position : inside;
+	width               : 534px;
+	text-align          : left;
+	margin              : 0 auto 60px auto;
+}
+
+#features h1 {
+	font-family : Underdog;
+	font-size   : 40px;
+	line-height : 44px;
+}
+
+/*****************
+ * games section *
+ *****************/
+
+#games h1 {
+	font-family : Underdog;
+	font-size   : 22px;
+	line-height : 36px;
+}
+
+#games img {
+	margin : 0px 20px;
+	width  : 165px;
+}
+
+/***************
+ * faq section *
+ ***************/
+
+#faq h1, #faq h2, #faq p {
+	text-align : left;
+	width      : 727px;
+	margin     : 20px auto;
+}
+
+#faq h1 {
+	font-family : Underdog;
+	font-size   : 22px;
+	line-height : 48px;
+}
+
+#faq h2 {
+	font-family : Underdog;
+	font-size   : 16px;
+	line-height : 20px;
+}
+
+#faq p strong {
+	font-weight : 700;
+}
+
+/******************
+ * bottom section *
+ ******************/
+
+#bottom {
+	padding: 10px 0;
+}
+
+#bottom p {
+	font-size   : 16px;
+	line-height : 26px;
+	margin-left : 100px;
+	text-align  : left;
+}
+
+/******************************
+ * featherlight configuration *
+ ******************************/
+
+div.featherlight-content {
+	background-color: rgb(240, 235, 226) !important;
+}
