@@ -42,7 +42,7 @@ hr {
 
 #top {
 	background-color    : black;
-	background-image    : url(img/Render04_cam1.jpg);
+	background-image    : url(../img/Render04_cam1.jpg);
 	background-position : 50% 50%;
 	background-repeat   : no-repeat;
 	background-size     : auto 100%;
@@ -61,7 +61,7 @@ hr {
 #game, #features, #faq {
 	color                 : white;
 	background-color      : rgb(243, 245, 247);
-	background-image      : url(img/for_fon_site.jpg);
+	background-image      : url(../img/for_fon_site.jpg);
 	background-repeat     : repeat;
 	background-position   : 50% 50%;
 	background-attachment : scroll;
@@ -71,9 +71,6 @@ hr {
 
 #bottom {
 	background-color : rgb(37, 37, 37);
-	color            : rgb(153, 153, 153);
-	font-size        : 11px;
-	line-height      : 40px;
 }
 
 /***************
@@ -98,7 +95,7 @@ hr {
 	right    : 2%;
 	top      : 5%;
 
-	height : 30%;
+	height : 20%;
 }
 
 #top #studio-logo {
@@ -290,10 +287,15 @@ hr {
 }
 
 #bottom p {
+	color       : rgb(153, 153, 153);
 	font-size   : 16px;
 	line-height : 26px;
 	margin-left : 100px;
 	text-align  : left;
+}
+
+#bottom a {
+	color : rgb(153, 153, 153);
 }
 
 /******************************
