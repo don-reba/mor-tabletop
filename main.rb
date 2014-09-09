@@ -7,5 +7,5 @@ require 'sinatra'
 enable :static
 
 get '/' do
-  send_file 'index.html'
+  redirect '/index.html'
 end
