@@ -82,6 +82,8 @@ hr {
 
 #top .lang {
 	color           : white;
+	font-size       : 2.5vh;
+	line-height     : 2.5vh;
 	text-decoration : none;
 
 	position : absolute;
@@ -125,8 +127,8 @@ hr {
 #top h2 {
 	color       : white;
 	font-family : Underdog;
-	font-size   : 20px;
-	line-height : 26px;
+	font-size   : 2.5vh;
+	line-height : 2.5vh;
 	text-align  : right;
 	text-shadow : 0 0 4px black;
 
