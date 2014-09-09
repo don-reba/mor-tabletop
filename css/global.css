@@ -95,6 +95,10 @@ hr {
 	color : rgb(247, 86, 85);
 }
 
+#top .lang img {
+	height : 1.5vh;
+}
+
 #top #pathologic-logo {
 	position : absolute;
 	right    : 2%;
