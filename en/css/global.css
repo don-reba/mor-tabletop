@@ -69,10 +69,6 @@ hr {
 	padding               : 20px 0;
 }
 
-#bottom {
-	background-color : rgb(37, 37, 37);
-}
-
 /***************
  * top section *
  ***************/
@@ -122,7 +118,7 @@ hr {
 
 	position    : absolute;
 	right       : 6%;
-	top         : 68%;
+	top         : 80%;
 }
 
 #top h2 {
@@ -135,7 +131,7 @@ hr {
 
 	position    : absolute;
 	right       : 6%;
-	top         : 78%;
+	top         : 90%;
 }
 
 /***********************
@@ -172,6 +168,10 @@ hr {
 	text-decoration  : none;
 }
 
+#kickstarter #button:hover {
+	background-color : rgb(144, 9, 23);
+}
+
 #kickstarter #chevron {
 }
 
@@ -201,6 +201,9 @@ hr {
 	height : 512px;
 }
 
+#cards img:hover {
+	box-shadow : 0 0 6px rgb(123, 118, 111);
+}
 
 #cards h1 {
 	font-family : Underdog;
@@ -257,6 +260,11 @@ hr {
 	width  : 165px;
 }
 
+#games img:hover {
+	background-color : rgb(203, 198, 189);
+	box-shadow       : 0 0 4px rgb(203, 198, 189);
+}
+
 /***************
  * faq section *
  ***************/
@@ -284,21 +292,13 @@ hr {
 	font-weight : 700;
 }
 
-/****************
- * mail section *
- ****************/
-
-#mail p {
-	width  : 727px;
-	margin : 20px auto;
-}
-
 /******************
  * bottom section *
  ******************/
 
 #bottom {
-	padding: 10px 0;
+	padding          : 10px 0;
+	background-color : rgb(50, 50, 50);
 }
 
 #bottom p {
@@ -313,17 +313,18 @@ hr {
 	color : rgb(153, 153, 153);
 }
 
-/******************************
- * featherlight configuration *
- ******************************/
+/****************
+ * mail section *
+ ****************/
 
-div.featherlight-content {
-	background-color: rgb(240, 235, 226) !important;
+#mail p {
+	width  : 727px;
+	margin : 20px auto;
 }
 
 /****************
  * social icons *
- ***************/
+ ****************/
 
 #social {
 	float   : right;
@@ -340,7 +341,19 @@ div.featherlight-content {
 	margin           : 0 2px;
 }
 
+#social span:hover {
+	box-shadow : 0 0 4px rgb(100, 100, 100);
+}
+
 #social #facebook  { background-position :    0px 0 }
 #social #twitter   { background-position :  -30px 0 }
 #social #youtube   { background-position :  -60px 0 }
 #social #instagram { background-position :  -90px 0 }
+
+/******************************
+ * featherlight configuration *
+ ******************************/
+
+div.featherlight-content {
+	background-color: rgb(240, 235, 226) !important;
+}
