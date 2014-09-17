@@ -52,7 +52,7 @@ hr {
 	position            : relative;
 }
 
-#kickstarter, #cards, #games {
+#kickstarter, #cards, #games, #mail {
 	color            : rgb(112, 10, 3);
 	background-color : rgb(240, 235, 226);
 	padding          : 20px 0;
@@ -282,6 +282,15 @@ hr {
 
 #faq p strong {
 	font-weight : 700;
+}
+
+/****************
+ * mail section *
+ ****************/
+
+#mail p {
+	width  : 727px;
+	margin : 20px auto;
 }
 
 /******************
