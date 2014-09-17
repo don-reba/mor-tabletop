@@ -311,3 +311,27 @@ hr {
 div.featherlight-content {
 	background-color: rgb(240, 235, 226) !important;
 }
+
+/****************
+ * social icons *
+ ***************/
+
+#social {
+	float   : right;
+	height  : 30px;
+	margin  : 0 100px 0 0;
+	padding : 0;
+}
+
+#social span {
+	display          : inline-block;
+	width            : 30px;
+	height           : 30px;
+	background-image : url(../img/social-icons.png);
+	margin           : 0 2px;
+}
+
+#social #facebook  { background-position :    0px 0 }
+#social #twitter   { background-position :  -30px 0 }
+#social #youtube   { background-position :  -60px 0 }
+#social #instagram { background-position :  -90px 0 }
