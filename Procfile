@@ -1,1 +1,1 @@
-web: bundle exec ruby main.rb -p $PORT
+web: vendor/bin/heroku-php-apache2
