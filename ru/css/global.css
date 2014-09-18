@@ -150,6 +150,10 @@ hr {
 	width       : 727px;
 }
 
+#kickstarter #availability {
+	margin-top : 20px;
+}
+
 #kickstarter h1 {
 	font-family : Underdog;
 	font-size   : 76px;
