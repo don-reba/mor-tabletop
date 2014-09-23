@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#">
 	<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
 		<title>Pathologic Tabletop</title>
@@ -29,7 +29,7 @@
 			<p>Pathologic is a plot-driven survival open-world adventure videogame for PC/Mac/Linux, PS4, and XBox One</p>
 			<h1>now on Kickstarter</h1>
 			<a id="button" href="https://www.kickstarter.com/projects/1535515364/pathologic"><span>GO</span></a>
-			<p>The board game is available as a reward for $300 and higher tiers, or you can purchase it as an add-on for $65 (if your basic reward is digital, please add $15 more for shipping). After its release, tabletop Pathologic will be sold separately.</p>
+			<p id="availability">The board game is available as a reward for $300 and higher tiers, or you can purchase it as an add-on for $65 (if your basic reward is digital, please add $15 more for shipping). After its release, tabletop Pathologic will be sold separately.</p>
 		</section>
 		<section id="game">
 			<hr>
@@ -61,16 +61,44 @@
 		</section>
 		<section id="features">
 			<hr>
-			<ul>
-				<li>2–4 players.</li>
-				<li>An average session takes 60-80 min.</li>
-				<li>Each player takes on the role of one of the three doctors or the Plague.</li>
-				<li>Each doctor has their own playstyle and abilities, and the Plague's gameplay is completely diferent.</li>
-				<li>The doctors’ goal is to complete missions while preserving as many of the Entwined companions as possible. The Plague’s goal is to kill certain Entwined.</li>
-				<li>The doctors move through the Town on their own or send their Entwined to complete dangerous missions. The Plague moves through the map stealthily, showing itself only when killing its targets or setting traps.</li>
-				<li>Players will have to think their moves through carefully while trying to guess what the others plan to do. They will also have to talk, bluff, and manipulate.</li>
-				<li>Every action has consequences. Players will have to evaluate risks and take on responsibility for their Entwined.</li>
-			</ul>
+			<table>
+				<tr>
+					<td>
+						<h1>Features</h1>
+						<ul id="featuresList">
+							<li>2–4 players.</li>
+							<li>An average session takes 60-80 min.</li>
+							<li>Each player takes on the role of one of the three doctors or the Plague.</li>
+							<li>Each doctor has their own playstyle and abilities, and the Plague's gameplay is completely diferent.</li>
+							<li>The doctors’ goal is to complete missions while preserving as many of the Entwined companions as possible. The Plague’s goal is to kill certain Entwined.</li>
+							<li>The doctors move through the Town on their own or send their Entwined to complete dangerous missions. The Plague moves through the map stealthily, showing itself only when killing its targets or setting traps.</li>
+							<li>Players will have to think their moves through carefully while trying to guess what the others plan to do. They will also have to talk, bluff, and manipulate.</li>
+							<li>Every action has consequences. Players will have to evaluate risks and take on responsibility for their Entwined.</li>
+						</ul>
+					</td>
+					<td>
+						<h1>Inside</h1>
+						<ul id="insideList">
+							<li>1 карта Города</li>
+							<li>4 памятки игроков (с одной стороны порядок хода, с другой стратегии персонажей)</li>
+							<li>4 “Истории Болезни” (листы персонажей)</li>
+							<li>1 “Журнал Станислава Рубина” (блокнот для записей перемещения Чумы)</li>
+							<li>3 фигурки Врачей</li>
+							<li>1 фигурка Чумы</li>
+							<li>9 токенов Приближенных</li>
+							<li>9 карт Приближенных</li>
+							<li>12 жетонов Карантина </li>
+							<li>3 жетона Влияния</li>
+							<li>18 жетонов Зараженных Кварталов </li>
+							<li>1 жетон Осады </li>
+							<li>3 жетона победного трека Врачей </li>
+							<li>15 карт событий Города</li>
+							<li>30 карт Развития (по 10 на врача)</li>
+							<li>45 жетонов ресурсов трех видов (по 15 каждого вида)</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
 			<hr>
 			<h1>Just remember that you can’t save them all.</h1>
 			<hr>
@@ -90,32 +118,57 @@
 			<p><strong>Ice-Pick Lodge</strong> is a Russian game development studio founded in 2002. Our general philosophy is that games should give players food for thought, not just fun. We have never produced a board game before, but now we have found skilled designers ready to translate a digital story into chips and paper. That’s how tabletop Pathologic came to be.</p>
 		</section>
 		<section id="mail">
-			<form method="post" action="http://ymlp.com/subscribe.php?id=ghswmqmgmgw">
+			<form id="mailForm" method="post" action="../subscribe.php">
 				<p>We have a mailing list!</p>
 				<p>We don't intend to send tons of messages, but there are a couple of nice videos in the works. We'll also share some game art later on. Subscribe if you don't want to miss all these goods!</p>
 				<p>
-					<input name="YMP0" type="text" />
+					<input name="email" type="text" />
 					<input value="Subscribe" type="submit" />
 				</p>
+				<p id="subscribeResponse"></p>
 			</form>
 		</section>
 		<section id="bottom">
 			<p>
 				© 2014 Ice-Pick Lodge · All rights reserved. Design by <a href="mailto:tamara.persikova@gmail.com">Tamara Persikova</a>; code by Don Reba.
 				<span id="social">
-					<a href="https://www.facebook.com/icepicklodge"><span id="facebook" /></a>
-					<a href="https://twitter.com/IcePickLodge"><span id="twitter" /></a>
-					<a href="http://www.youtube.com/user/IcePickLodge"><span id="youtube" /></a>
-					<a href="http://instagram.com/icepicklodge"><span id="instagram" /></a>
-					<a href="mailto:tabletop@ice-pick.com"><span id="email" /></a>
+					<a href="https://www.facebook.com/icepicklodge"><span id="facebook"></span></a>
+					<a href="https://twitter.com/IcePickLodge"><span id="twitter"></span></a>
+					<a href="http://www.youtube.com/user/IcePickLodge"><span id="youtube"></span></a>
+					<a href="http://instagram.com/icepicklodge"><span id="instagram"></span></a>
+					<a href="mailto:tabletop@ice-pick.com"><span id="email"></span></a>
 				</span>
 			</p>
 		</section>
 
 		<script src="../js/jquery.js"></script>
+		<script src="../js/jquery.form.js"></script>
 		<script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 		<script src="../js/viewport-units-buggyfill.js"></script>
 		<script>window.viewportUnitsBuggyfill.init();</script>
+
+		<script>
+			function StripHtml(html)
+			{
+				var body    = html.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g, '');
+				var content = $(body);
+				content.find('a').remove();
+				content.find('br').replaceWith(' ');
+				return content.text();
+			}
+			$(document).ready(function() {
+				// bind 'mailForm'
+				var options ={
+					clearForm : true,
+					data      : { lang : 'en' },
+
+					success : function(result) {
+						$('#subscribeResponse').text(StripHtml(result));
+					}
+				};
+				$('#mailForm').ajaxForm(options);
+			});
+		</script>
 	</body>
 </html>

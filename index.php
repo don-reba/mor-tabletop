@@ -64,7 +64,7 @@ function method_get()
 	}
 
 	header('HTTP/1.1 302 Found');
-	header('Location: /'.$language.'/');
+	header('Location: '.$language.'/');
 }
 
 $request_method = isset($_SERVER['REQUEST_METHOD']) ? strtolower($_SERVER['REQUEST_METHOD']) : '';

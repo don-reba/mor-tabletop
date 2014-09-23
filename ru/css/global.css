@@ -150,6 +150,10 @@ hr {
 	width       : 727px;
 }
 
+#kickstarter #availability {
+	margin-top : 20px;
+}
+
 #kickstarter h1 {
 	font-family : Underdog;
 	font-size   : 76px;
@@ -231,12 +235,19 @@ hr {
  * features section *
  ********************/
 
+#features table {
+	border-collapse : separate;
+	border-spacing  : 60px 0;
+	margin          : 0 auto;
+}
+
 #features ul {
+	list-style-position : outside;
 	list-style-type     : square;
-	list-style-position : inside;
-	width               : 534px;
+	margin              : 20px auto 60px auto;
+	padding-left        : 1em;
 	text-align          : left;
-	margin              : 0 auto 60px auto;
+	width               : 400px;
 }
 
 #features h1 {
