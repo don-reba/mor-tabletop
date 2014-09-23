@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Настольный Мор: Утопия</title>
@@ -91,32 +91,57 @@
 			<p><strong>Ice-Pick Lodge</strong> — российская игростроительная студия, основанная в 2002 году. Мы верим, что игры должны не только развлекать игрока, но и давать ему пищу для ума. Прежде ледорубы не делали настольных игр, но теперь мы нашли мастеров, способных переложить цифровую историю в бумагу и фишки. Так родился этот «Мор».</p>
 		</section>
 		<section id="mail">
-			<form method="post" action="http://ymlp.com/subscribe.php?id=ghswmqmgmgq">
+			<form id="mailForm" method="post" action="../subscribe.php">
 				<p>Мы не собираемся слать много писем, но планируем сделать пару симпатичных роликов про игру и иногда делиться картинками к ней. Подпишитесь, и тогда вы их не пропустите.</p>
 				<p>
-					<input name="YMP0" size="20" type="text" />
+					<input name="email" size="20" type="text" />
 					<input value="Подписаться" type="submit" />
 				</p>
+				<p id="subscribeResponse"></p>
 			</form>
 		</section>
 		<section id="bottom">
 			<p>
 				© 2014 Ice-Pick Lodge · Все права защищены. Дизайн: <a href="mailto:tamara.persikova@gmail.com">Тамара Персикова</a>; реализация: Don Reba.
 				<span id="social">
-					<a href="https://www.facebook.com/icepicklodge"><span id="facebook" /></a>
-					<a href="https://twitter.com/IcePickLodge"><span id="twitter" /></a>
-					<a href="http://www.youtube.com/user/IcePickLodge"><span id="youtube" /></a>
-					<a href="http://instagram.com/icepicklodge"><span id="instagram" /></a>
-					<a href="mailto:tabletop@ice-pick.com"><span id="email" /></a>
-					<a href="http://vk.com/icepicklodge"><span id="vk" /></a>
+					<a href="https://www.facebook.com/icepicklodge"><span id="facebook"></span></a>
+					<a href="https://twitter.com/IcePickLodge"><span id="twitter"></span></a>
+					<a href="http://www.youtube.com/user/IcePickLodge"><span id="youtube"></span></a>
+					<a href="http://instagram.com/icepicklodge"><span id="instagram"></span></a>
+					<a href="mailto:tabletop@ice-pick.com"><span id="email"></span></a>
+					<a href="http://vk.com/icepicklodge"><span id="vk"></span></a>
 				</span>
 			</p>
 		</section>
 
 		<script src="../js/jquery.js"></script>
+		<script src="../js/jquery.form.js"></script>
 		<script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 		<script src="../js/viewport-units-buggyfill.js"></script>
 		<script>window.viewportUnitsBuggyfill.init();</script>
+
+		<script>
+			function StripHtml(html)
+			{
+				var body    = html.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g, '');
+				var content = $(body);
+				content.find('a').remove();
+				content.find('br').replaceWith(' ');
+				return content.text();
+			}
+			$(document).ready(function() {
+				// bind 'mailForm'
+				var options ={
+					clearForm : true,
+					data      : { lang : 'ru' },
+
+					success : function(result) {
+						$('#subscribeResponse').text(StripHtml(result));
+					}
+				};
+				$('#mailForm').ajaxForm(options);
+			});
+		</script>
 	</body>
 </html>

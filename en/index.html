@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#">
 	<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
 		<title>Pathologic Tabletop</title>
@@ -90,11 +90,11 @@
 			<p><strong>Ice-Pick Lodge</strong> is a Russian game development studio founded in 2002. Our general philosophy is that games should give players food for thought, not just fun. We have never produced a board game before, but now we have found skilled designers ready to translate a digital story into chips and paper. That’s how tabletop Pathologic came to be.</p>
 		</section>
 		<section id="mail">
-			<form id="mailForm">
+			<form id="mailForm" method="post" action="../subscribe.php">
 				<p>We have a mailing list!</p>
 				<p>We don't intend to send tons of messages, but there are a couple of nice videos in the works. We'll also share some game art later on. Subscribe if you don't want to miss all these goods!</p>
 				<p>
-					<input name="YMP0" type="text" />
+					<input name="email" type="text" />
 					<input value="Subscribe" type="submit" />
 				</p>
 				<p id="subscribeResponse"></p>
@@ -104,11 +104,11 @@
 			<p>
 				© 2014 Ice-Pick Lodge · All rights reserved. Design by <a href="mailto:tamara.persikova@gmail.com">Tamara Persikova</a>; code by Don Reba.
 				<span id="social">
-					<a href="https://www.facebook.com/icepicklodge"><span id="facebook" /></a>
-					<a href="https://twitter.com/IcePickLodge"><span id="twitter" /></a>
-					<a href="http://www.youtube.com/user/IcePickLodge"><span id="youtube" /></a>
-					<a href="http://instagram.com/icepicklodge"><span id="instagram" /></a>
-					<a href="mailto:tabletop@ice-pick.com"><span id="email" /></a>
+					<a href="https://www.facebook.com/icepicklodge"><span id="facebook"></span></a>
+					<a href="https://twitter.com/IcePickLodge"><span id="twitter"></span></a>
+					<a href="http://www.youtube.com/user/IcePickLodge"><span id="youtube"></span></a>
+					<a href="http://instagram.com/icepicklodge"><span id="instagram"></span></a>
+					<a href="mailto:tabletop@ice-pick.com"><span id="email"></span></a>
 				</span>
 			</p>
 		</section>
@@ -121,20 +121,23 @@
 		<script>window.viewportUnitsBuggyfill.init();</script>
 
 		<script>
+			function StripHtml(html)
+			{
+				var body    = html.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g, '');
+				var content = $(body);
+				content.find('a').remove();
+				content.find('br').replaceWith(' ');
+				return content.text();
+			}
 			$(document).ready(function() {
 				// bind 'mailForm'
 				var options ={
 					clearForm : true,
-					method    : 'POST',
-					target    : '$subscribeResponse',
-					url       : 'http://ymlp.com/subscribe.php?id=ghswmqmgmgw',
+					data      : { lang : 'en' },
 
-					error : function() {
-						alert('error'); 
-					},
-					success : function() {
-						alert('success'); 
-					} 
+					success : function(result) {
+						$('#subscribeResponse').text(StripHtml(result));
+					}
 				};
 				$('#mailForm').ajaxForm(options);
 			});
