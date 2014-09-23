@@ -13,13 +13,6 @@ function Subscribe($id, $email)
 	 
 	echo curl_exec($ch);
 
-	/*
-	echo '<hr>';
-	echo '<pre>';
-	print_r(curl_getinfo($ch));
-	echo '</pre>';
-	 */
-
 	curl_close($ch);
 }
 
