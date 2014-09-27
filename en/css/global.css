@@ -303,6 +303,15 @@ hr {
 	font-weight : 700;
 }
 
+/****************
+ * mail section *
+ ****************/
+
+#mail p {
+	width  : 727px;
+	margin : 20px auto;
+}
+
 /******************
  * bottom section *
  ******************/
@@ -310,6 +319,7 @@ hr {
 #bottom {
 	padding          : 10px 0;
 	background-color : rgb(50, 50, 50);
+	overflow         : auto;
 }
 
 #bottom p {
@@ -322,15 +332,6 @@ hr {
 
 #bottom a {
 	color : rgb(153, 153, 153);
-}
-
-/****************
- * mail section *
- ****************/
-
-#mail p {
-	width  : 727px;
-	margin : 20px auto;
 }
 
 /****************
