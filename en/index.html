@@ -147,9 +147,12 @@
 		<script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 		<script src="../js/viewport-units-buggyfill.js"></script>
-		<script>window.viewportUnitsBuggyfill.init();</script>
 
 		<script>
+			// fix #top for iOS
+			window.viewportUnitsBuggyfill.init();
+
+			// handle mail subscriptions
 			function StripHtml(html)
 			{
 				var body    = html.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g, '');
