@@ -18,27 +18,69 @@
 		<meta property="twitter:creator" content="@IcePickLodge">
 	</head>
 	<body>
-		<section id="top">
+		<nav id="cd-vertical-nav">
+			<ul>
+				<li>
+					<a href="#top" data-number="1">
+						<span class="cd-dot"></span>
+						<span class="cd-label">Intro</span>
+					</a>
+				</li>
+				<li>
+					<a href="#kickstarter" data-number="2">
+						<span class="cd-dot"></span>
+						<span class="cd-label">Kickstarter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#game" data-number="3">
+						<span class="cd-dot"></span>
+						<span class="cd-label">Game</span>
+					</a>
+				</li>
+				<li>
+					<a href="#cards" data-number="4">
+						<span class="cd-dot"></span>
+						<span class="cd-label">Cards</span>
+					</a>
+				</li>
+				<li>
+					<a href="#features" data-number="5">
+						<span class="cd-dot"></span>
+						<span class="cd-label">Features</span>
+					</a>
+				</li>
+				<li>
+					<a href="#faq" data-number="6">
+						<span class="cd-dot"></span>
+						<span class="cd-label">FAQ</span>
+					</a>
+				</li>
+			</ul>
+
+		</nav>
+		<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+		<section id="top" class="cd-section">
 			<a class="lang" href="../ru/index.html"><img src="img/ru.png" alt="" /> Русский</a>
 			<h1>a tabletop game<br />by Ice-Pick Lodge</h1>
 			<h2>based on a videogame by the same name</h2>
 			<a href="http://www.ice-pick.com/index_eng.htm"><img id="studio-logo" src="img/IPiL_bg.png" alt="" /></a>
 			<img id="pathologic-logo" src="img/pathologic-logo_wh.png" alt="" />
 		</section>
-		<section id="kickstarter">
+		<section id="kickstarter" class="cd-section">
 			<p>Pathologic is a plot-driven survival open-world adventure videogame for PC/Mac/Linux, PS4, and XBox One</p>
 			<h1>now on Kickstarter</h1>
 			<a id="button" href="https://www.kickstarter.com/projects/1535515364/pathologic"><span>GO</span></a>
 			<p id="availability">The board game is available as a reward for $300 and higher tiers, or you can purchase it as an add-on for $65 (if your basic reward is digital, please add $15 more for shipping). After its release, tabletop Pathologic will be sold separately.</p>
 		</section>
-		<section id="game">
+		<section id="game" class="cd-section">
 			<hr>
 			<h1>THE TOWN IS SUCCUMBING TO A MYSTERIOUS PLAGUE</h1>
 			<hr>
 			<p>Barricades are being built in the streets, shop shelves are becoming barren, marauders are looting houses. An invisible murderer is walking through the Town — merciless, weightless, and listless. No one knows how to protect themselves against it or who is to become its next victim.</p>
 			<p>Seems like the Town is doomed — yet, those of its inhabitants who are privy to the mystery of its internal structure are still trying to fight back. Their efforts and hopes are guided by the knowledge and the will of three outstanding persons.</p>
 		</section>
-		<section id="cards">
+		<section id="cards" class="cd-section">
 			<table>
 				<tr>
 					<td>
@@ -59,7 +101,7 @@
 				</tr>
 			</table>
 		</section>
-		<section id="features">
+		<section id="features" class="cd-section">
 			<hr>
 			<table>
 				<tr>
@@ -111,7 +153,7 @@
 			<a href="http://www.cargo-game.com/"><img src="img/cargo_big.png" alt="Cargo!" /></a>
 			<a href="http://knock.ice-pick.com"><img src="img/KK_logo_eng_b.png" alt="Knock-knock" /></a>
 		</section>
-		<section id="faq">
+		<section id="faq" class="cd-section">
 			<h1>FAQ</h1>
 			<h2>About this game</h2>
 			<p><strong>The Pathologic tabletop game</strong> is currently under development. We are still searching for the final form it will take. So please be aware that some interface choices are subject to change and assets presented above (tokens, cards, etc) may be altered.</p>
@@ -144,11 +186,60 @@
 
 		<script src="../js/jquery.js"></script>
 		<script src="../js/jquery.form.js"></script>
-		<script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/featherlight.min.js"></script>
+		<script src="../js/modernizr.js"></script>
 
 		<script src="../js/viewport-units-buggyfill.js"></script>
 
 		<script>
+			// navigation
+			var contentSections = $('.cd-section'),
+			navigationItems = $('#cd-vertical-nav a');
+
+			updateNavigation();
+			$(window).on('scroll', function(){
+				updateNavigation();
+			});
+
+			//smooth scroll to the section
+			navigationItems.on('click', function(event){
+				event.preventDefault();
+				smoothScroll($(this.hash));
+			});
+			//smooth scroll to second section
+			$('.cd-scroll-down').on('click', function(event){
+				event.preventDefault();
+				smoothScroll($(this.hash));
+			});
+
+			//open-close navigation on touch devices
+			$('.touch .cd-nav-trigger').on('click', function(){
+				$('.touch #cd-vertical-nav').toggleClass('open');
+
+			});
+			//close navigation on touch devices when selectin an elemnt from the list
+			$('.touch #cd-vertical-nav a').on('click', function(){
+				$('.touch #cd-vertical-nav').removeClass('open');
+			});
+
+			function updateNavigation() {
+				contentSections.each(function(){
+					$this = $(this);
+					var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
+					if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+						navigationItems.eq(activeSection).addClass('is-selected');
+						}else {
+						navigationItems.eq(activeSection).removeClass('is-selected');
+					}
+				});
+			}
+
+			function smoothScroll(target) {
+				$('body,html').animate(
+				{'scrollTop':target.offset().top},
+				600
+				);
+			}
 			// fix #top for iOS
 			window.viewportUnitsBuggyfill.init();
 
