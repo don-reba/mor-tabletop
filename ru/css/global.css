@@ -12,16 +12,15 @@ caption,th,td { text-align:left; font-weight:normal; }
 blockquote:before,blockquote:after,q:before,q:after { content:""; }
 blockquote,q { quotes:"" ""; }
 
-/*****************
- * global styles *
- *****************/
+/***************************
+ * magic phone-fixing styles
+ **************************/
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5){
-
   html,
   body{
     width:100%;
@@ -29,6 +28,10 @@ only screen and (min-device-pixel-ratio: 1.5){
   }
 
 }
+
+/*****************
+ * global styles *
+ *****************/
 
 
 html, body {
