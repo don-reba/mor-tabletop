@@ -256,6 +256,11 @@ hr {
 	line-height : 44px;
 }
 
+#features #featuresList li
+{
+	padding: 5px 0;
+}
+
 /*****************
  * games section *
  *****************/
