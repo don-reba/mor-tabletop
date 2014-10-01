@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../css/featherlight.min.css" />
 		<link rel='stylesheet' id='redux-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic%7CDidact+Gothic%3A400%7CUnderdog%3A400%7CMaven+Pro%3A400%2C500%2C700%2C900%7CUbuntu%3A300%2C400%2C500%2C700%2C300italic%2C400italic%2C500italic%2C700italic&#038;subset=latin%2Ccyrillic-ext%2Ccyrillic&#038;ver=1409991951' type='text/css' media='all' />
 		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="../css/global.css">
 
 		<!-- Open Graph Meta -->
 		<meta property="og:title"  content="Настольный Мор: Утопия"/>
@@ -20,27 +21,27 @@
 		<meta property="twitter:creator" content="@IcePickLodge">
 	</head>
 	<body>
-		<section id="top">
+		<section id="top" class="cd-section">
 			<a class="lang" href="../en/index.html"><img src="img/en.png" alt="" /> English</a>
 			<h1>настольная игра<br />от Ice-Pick Lodge</h1>
 			<h2>приуроченная к перезапуску одноименной видеоигры</h2>
 			<a href="http://www.ice-pick.com/index_rus.htm"><img id="studio-logo" src="img/IPiL_bg.png" alt="" /></a>
 			<img id="pathologic-logo" src="img/pathologic-logo_wh.png" alt="" />
 		</section>
-		<section id="kickstarter">
+		<section id="kickstarter" class="cd-section">
 			<p>«Мор. Утопия» — это сюжетная survival adventure с открытым миром, которая выйдет на PC (Windows / MAC / Linux), PS4 и Xbox One</p>
 			<h1>уже на Kickstarter</h1>
 			<a id="button" href="https://www.kickstarter.com/projects/1535515364/pathologic"><span>ВПЕРЕД</span></a>
 			<p id="availability">Сейчас настольную игру можно заказать в виде пледжа от $300 или в качестве отдельного бонуса за $65 (в случае, если ваш основной пледж включает в себя только виртуальные награды, не забудьте добавить $15 — именно столько будет стоить пересылка). После того, как игра будет издана, она поступит в самостоятельную продажу.</p>
 		</section>
-		<section id="game">
+		<section id="game" class="cd-section">
 			<hr>
 			<h1>ГОРОД ОХВАЧЕН ЭПИДЕМИЕЙ</h1>
 			<hr>
 			<p>Улицы обрастают баррикадами, прилавки магазинов пустеют, мародеры грабят брошенные дома. По городу бродит невидимый убийца: безжалостный, бесплотный, беспристрастный. Никто не знает, как уберечься от него и кто его следующая жертва.</p>
 			<p>Кажется, что город обречен, но некоторые жители, приближенные к тайне его устройства, еще пытаются бороться. Их усилия и надежды направляются знаниями и волей трех выдающихся людей.</p>
 		</section>
-		<section id="cards">
+		<section id="cards" class="cd-section">
 			<table>
 				<tr>
 					<td>
@@ -61,7 +62,7 @@
 				</tr>
 			</table>
 		</section>
-		<section id="features">
+		<section id="features" class="cd-section">
 			<hr>
 			<table>
 				<tr>
@@ -113,14 +114,14 @@
 			<a href="http://www.cargo-game.com/ru/"><img src="img/cargo_big.png" alt="Карго!" /></a>
 			<a href="http://knock.ice-pick.com/index_ru.html"><img src="img/logo_rus.png" alt="Тук-тук-тук" /></a>
 		</section>
-		<section id="faq">
+		<section id="faq" class="cd-section">
 			<h1>FAQ</h1>
 			<h2>Об этой игре</h2>
 			<p><strong>Настольная игра «Мор (Утопия)»</strong> сейчас находится в разработке. Мы еще только ищем форму, в которой игра предстанет вашему взору. Поэтому считаем нужным пояснить: некоторые интерфейсные решения могут быть изменены, и игровые элементы, представленные выше (карты, фишки и т.д.), в окончательной версии могут выглядеть иначе.</p>
 			<h2>О разработчике</h2>
 			<p><strong>Ice-Pick Lodge</strong> — российская игростроительная студия, основанная в 2002 году. Мы верим, что игры должны не только развлекать игрока, но и давать ему пищу для ума. Прежде ледорубы не делали настольных игр, но теперь мы нашли мастеров, способных переложить цифровую историю в бумагу и фишки. Так родился этот «Мор».</p>
 		</section>
-		<section id="mail">
+		<section id="mail" class="cd-section">
 			<form id="mailForm" method="post" action="../subscribe.php">
 				<p>Мы не собираемся слать много писем, но планируем сделать пару симпатичных роликов про игру и иногда делиться картинками к ней. Подпишитесь, и тогда вы их не пропустите.</p>
 				<p>
@@ -143,14 +144,104 @@
 				© 2014 Ice-Pick Lodge · Все права защищены. Дизайн: <a href="mailto:tamara.persikova@gmail.com">Тамара Персикова</a>; реализация: Don Reba.
 			</p>
 		</section>
+		<nav id="cd-vertical-nav">
+			<ul>
+				<li>
+					<a href="#top" data-number=1>
+						<span class="cd-dot"></span>
+						<span class="cd-label">Введение</span>
+					</a>
+				</li>
+				<li>
+					<a href="#kickstarter" data-number=2>
+						<span class="cd-dot"></span>
+						<span class="cd-label">Kickstarter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#game" data-number=3>
+						<span class="cd-dot"></span>
+						<span class="cd-label">Об игре</span>
+					</a>
+				</li>
+				<li>
+					<a href="#cards" data-number=4>
+						<span class="cd-dot"></span>
+						<span class="cd-label">Карты</span>
+					</a>
+				</li>
+				<li>
+					<a href="#features" data-number=5>
+						<span class="cd-dot"></span>
+						<span class="cd-label">Особенности</span>
+					</a>
+				</li>
+				<li>
+					<a href="#faq" data-number=6>
+						<span class="cd-dot"></span>
+						<span class="cd-label">FAQ</span>
+					</a>
+				</li>
+				<li>
+					<a href="#mail" data-number=7>
+						<span class="cd-dot"></span>
+						<span class="cd-label">Подписаться</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 
 		<script src="../js/jquery.js"></script>
 		<script src="../js/jquery.form.js"></script>
 		<script src="../js/featherlight.min.js"></script>
-
+		<script src="../js/modernizr.js"></script>
 		<script src="../js/viewport-units-buggyfill.js"></script>
 
 		<script>
+			// navigation
+			var contentSections = $('.cd-section'),
+			navigationItems = $('#cd-vertical-nav a');
+
+			updateNavigation();
+			$(window).on('scroll', function(){
+				updateNavigation();
+			});
+
+			//smooth scroll to the section
+			navigationItems.on('click', function(event){
+				event.preventDefault();
+				smoothScroll($(this.hash));
+			});
+
+			//open-close navigation on touch devices
+			$('.no-touch .cd-nav-trigger').on('click', function(){
+				$('.no-touch #cd-vertical-nav').toggleClass('open');
+
+			});
+			//close navigation on touch devices when selectin an elemnt from the list
+			$('.no-touch #cd-vertical-nav a').on('click', function(){
+				$('.no-touch #cd-vertical-nav').removeClass('open');
+			});
+
+			function updateNavigation() {
+				contentSections.each(function(){
+					$this = $(this);
+					var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
+					if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+						navigationItems.eq(activeSection).addClass('is-selected');
+						}else {
+						navigationItems.eq(activeSection).removeClass('is-selected');
+					}
+				});
+			}
+
+			function smoothScroll(target) {
+				$('body,html').animate(
+				{'scrollTop':target.offset().top},
+				600
+				);
+			}
+
 			// fix #top for iOS
 			window.viewportUnitsBuggyfill.init();
 
