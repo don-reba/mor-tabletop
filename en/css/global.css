@@ -164,21 +164,6 @@ hr {
 	margin      : 20px 0 20px 0;
 }
 
-#kickstarter #button {
-	background-color : rgb(112, 10, 3);
-	border           : none;
-	color            : white;
-	display          : inline-block;
-	font-size        : 14px;
-	line-height      : 20px;
-	padding          : 18px 50px;
-	text-decoration  : none;
-}
-
-#kickstarter #button:hover {
-	background-color : rgb(193, 86, 66);
-}
-
 /****************
  * game section *
  ****************/
