@@ -11,13 +11,13 @@ $(document).ready(function()
 	});
 
 	//open-close navigation on touch devices
-	$('.no-touch .cd-nav-trigger').on('click', function() {
-		$('.no-touch #cd-vertical-nav').toggleClass('open');
+	$('.touch .cd-nav-trigger').on('click', function() {
+		$('.touch #cd-vertical-nav').toggleClass('open');
 
 	});
 	//close navigation on touch devices when selectin an elemnt from the list
-	$('.no-touch #cd-vertical-nav a').on('click', function() {
-		$('.no-touch #cd-vertical-nav').removeClass('open');
+	$('.touch #cd-vertical-nav a').on('click', function() {
+		$('.touch #cd-vertical-nav').removeClass('open');
 	});
 
 	function updateNavigation()
