@@ -265,7 +265,7 @@ html * {
   display         : block;
   font            : "Didact Gothic";
   font-size       : 22px;
-  padding         : 1em;
+  padding         : 16px;
   text-align      : left;
   text-decoration : none;
 }
