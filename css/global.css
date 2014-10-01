@@ -197,7 +197,6 @@ html * {
   text-align      : left;
   text-decoration : none;
   color           : #3e3947;
-  font            : menu;
 }
 .touch .cd-nav-trigger span {
   position          : absolute;
@@ -261,9 +260,12 @@ html * {
   background-color            : rgba(255, 255, 255, 0.9);
 }
 .touch #cd-vertical-nav a {
-  display       : block;
-  padding       : 1em;
-  border-bottom : 1px solid rgba(62, 57, 71, 0.1);
+  border-bottom   : 1px solid rgba(62, 57, 71, 0.1);
+  display         : block;
+  font            : menu;
+  padding         : 1em;
+  text-align      : left;
+  text-decoration : none;
 }
 .touch #cd-vertical-nav a span:first-child {
   display: none;
