@@ -147,7 +147,7 @@ html * {
    * label's font, you may need to change this top value
    */
   position                 : relative;
-  top                      : 11px;
+  top                      : 8px;
   height                   : 12px;
   width                    : 12px;
   border-radius            : 50%;
@@ -164,9 +164,9 @@ html * {
 .no-touch #cd-vertical-nav .cd-label {
   position                 : relative;
   margin-right             : 10px;
-  padding                  : .4em .5em;
+  padding                  : 4px;
   color                    : white;
-  font-family              : "Didact Gothic";
+  font-family              : Underdog;
   font-size                : 14px;
   font-size                : 0.875rem;
   text-shadow              : 0 0 4px black;
