@@ -10,12 +10,6 @@ $(document).ready(function()
 		updateNavigation();
 	});
 
-	//smooth scroll to the section
-	navigationItems.on('click', function(event) {
-		event.preventDefault();
-		smoothScroll($(this.hash));
-	});
-
 	//open-close navigation on touch devices
 	$('.no-touch .cd-nav-trigger').on('click', function() {
 		$('.no-touch #cd-vertical-nav').toggleClass('open');
@@ -37,14 +31,6 @@ $(document).ready(function()
 				navigationItems.eq(activeSection).removeClass('is-selected');
 			}
 		});
-	}
-
-	function smoothScroll(target)
-	{
-		$('body,html').animate(
-		{'scrollTop':target.offset().top},
-		600
-		);
 	}
 
 	// fix #top for iOS
