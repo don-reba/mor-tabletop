@@ -30,7 +30,7 @@ html * {
   box-sizing: border-box;
 }
 
-#button {
+.button {
 	background-color : rgb(112, 10, 3);
 	border           : none;
 	color            : white;
@@ -43,7 +43,7 @@ html * {
 	text-decoration  : none;
 }
 
-#button:hover {
+.button:hover {
 	background-color : rgb(193, 86, 66);
 }
 
