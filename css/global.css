@@ -261,8 +261,10 @@ html * {
 }
 .touch #cd-vertical-nav a {
   border-bottom   : 1px solid rgba(62, 57, 71, 0.1);
+  color           : black;
   display         : block;
-  font            : menu;
+  font            : "Didact Gothic";
+  font-size       : 22px;
   padding         : 1em;
   text-align      : left;
   text-decoration : none;
